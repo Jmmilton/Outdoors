@@ -1,10 +1,8 @@
 // Function expression to select elements //
 
-const selectElement = s => document.querySelector(s);
-
-// function selectElement(s) {
-//   return document.querySelector(s);
-// }
+function selectElement(s) {
+  return document.querySelector(s);
+}
 
 // open the menu on click//
 selectElement('.open').addEventListener('click', () => {
@@ -14,4 +12,12 @@ selectElement('.open').addEventListener('click', () => {
 // close the menu on click//
 selectElement('.close').addEventListener('click', () => {
   selectElement('.nav-list').classList.remove('active');
+});
+// close the menu on click!Anywhere!//
+selectElement('.hero').addEventListener('click', () => {
+  selectElement('.nav-list').classList.remove('active');
+});
+
+selectElement('.btn').addEventListener('click', () => {
+  console.log('clicked');
 });
